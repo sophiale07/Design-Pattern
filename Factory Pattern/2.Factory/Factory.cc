@@ -1,18 +1,18 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
-//(ÆÕÍ¨)¹¤³§Ä£Ê½
+//(æ™®é€š)å·¥å‚æ¨¡å¼
 
 
-//³éÏó²úÆ·
+//æŠ½è±¡äº§å“
 class Product
 {
 public:
-	virtual void Operation() = 0;//´¿Ğéº¯Êı
+	virtual void Operation() = 0;//çº¯è™šå‡½æ•°
 };
 
 
-//¾ßÌå²úÆ·1
+//å…·ä½“äº§å“1
 class ConcreteProduct1: public Product
 {
 public:
@@ -23,7 +23,7 @@ public:
 };
 
 
-//¾ßÌå²úÆ·2
+//å…·ä½“äº§å“2
 class ConcreteProduct2:public Product
 {
 public:
@@ -33,14 +33,14 @@ public:
 	}
 };
 
-//³éÏó¹¤³§
+//æŠ½è±¡å·¥å‚
 class Factory
 {
 public:
 	virtual Product* CreateProduct() = 0;
 };
 
-//¾ßÌå¹¤³§1
+//å…·ä½“å·¥å‚1
 class ConcreteFactory1: public Factory
 {
 public:
@@ -51,7 +51,7 @@ public:
 			
 };
 
-//¾ßÌå¹¤³§2
+//å…·ä½“å·¥å‚2
 class ConcreteFactory2: public Factory
 {
 public:

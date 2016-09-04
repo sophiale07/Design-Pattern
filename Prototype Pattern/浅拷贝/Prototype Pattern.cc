@@ -1,13 +1,13 @@
-#include<iostream>
+﻿#include<iostream>
 using namespace std;
 
-//ǳ���������Թ۲쵽p�ĵ�ַ��һ���ģ�������ʱ����Ϊ�ظ��ͷ�ͬһ��ַ�ռ䣬�����
+//浅拷贝，可以观察到p的地址是一样的，析构的时候因为重复释放同一地址空间，会出错
 
 class PrototypeWrong
 {
 private:
 	int a;
-	int *p;//������һ��ָ��
+	int *p;//类中有一个指针
 
 public:
 	PrototypeWrong()
@@ -29,7 +29,7 @@ public:
 
 void main()
 {
-	//p1��p2ָ��ͬһ����ַ�������ظ�����ָ��p����ɴ���
+	//p1和p2指向同一个地址，导致重复析构指针p，造成错误
 	PrototypeWrong p1;
 	PrototypeWrong p2 = p1;
 

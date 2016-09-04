@@ -1,11 +1,11 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 
-//½¨ÔìÕßÄ£Ê½
+//å»ºé€ è€…æ¨¡å¼
 
 
-//³éÏó½¨ÔìÕß
+//æŠ½è±¡å»ºé€ è€…
 class Builder
 {
 public:
@@ -15,7 +15,7 @@ public:
 
 
 
-//¾ßÌå½¨ÔìÕß1
+//å…·ä½“å»ºé€ è€…1
 class ConcreteBuilder1: public Builder
 {
 public:
@@ -30,7 +30,7 @@ public:
 
 
 
-//¾ßÌå½¨ÔìÕß2
+//å…·ä½“å»ºé€ è€…2
 class ConcreteBuilder2: public Builder
 {
 public:
@@ -44,7 +44,7 @@ public:
 };
 
 
-//Ö¸»ÓÕß£¬·½·¨µÄ²ÎÊıÊÇ³éÏó½¨ÔìÕßµÄÖ¸Õë
+//æŒ‡æŒ¥è€…ï¼Œæ–¹æ³•çš„å‚æ•°æ˜¯æŠ½è±¡å»ºé€ è€…çš„æŒ‡é’ˆ
 class Director
 {
 public:

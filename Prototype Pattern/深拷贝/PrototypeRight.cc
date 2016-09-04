@@ -1,7 +1,7 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
-//Ô­ĞÍÄ£Ê½£¬±¾ÖÊ¾ÍÊÇÉî¿½±´
+//åŸå‹æ¨¡å¼ï¼Œæœ¬è´¨å°±æ˜¯æ·±æ‹·è´
 
 class PrototypeRight
 {
@@ -15,21 +15,21 @@ public:
 		p = new int(2);
 	}
 
-	//²»Ê¹ÓÃÄ¬ÈÏµÄ¿½±´¹¹Ôìº¯Êı
+	//ä¸ä½¿ç”¨é»˜è®¤çš„æ‹·è´æ„é€ å‡½æ•°
 	PrototypeRight(const PrototypeRight &obj)
 	{
 		a = obj.a;
 		p = new int(*obj.p);
 	}
 
-	//²»Ê¹ÓÃÄ¬ÈÏµÄÖØÔØ"="²Ù×÷·û
+	//ä¸ä½¿ç”¨é»˜è®¤çš„é‡è½½"="æ“ä½œç¬¦
 	PrototypeRight & PrototypeRight::operator = (const PrototypeRight &obj)
 	{
 		if(this == &obj)
 			return *this;
 
-		delete p; //É¾³ıÖ¸ÕëpËùÖµ¿Õ¼ä
-		p = NULL; //·ÀÖ¹Ò°Ö¸Õë
+		delete p; //åˆ é™¤æŒ‡é’ˆpæ‰€å€¼ç©ºé—´
+		p = NULL; //é˜²æ­¢é‡æŒ‡é’ˆ
 
 		a = obj.a;
 		p = new int(*obj.p);
@@ -52,9 +52,9 @@ int main()
 {
 	PrototypeRight p1;
 	PrototypeRight p2;
-	p2 = p1; //µ÷ÓÃÖØÔØ²Ù×÷·û"="
+	p2 = p1; //è°ƒç”¨é‡è½½æ“ä½œç¬¦"="
 
-	PrototypeRight p3 = p1;//µ÷ÓÃ¿½±´¹¹Ôìº¯Êı
+	PrototypeRight p3 = p1;//è°ƒç”¨æ‹·è´æ„é€ å‡½æ•°
 
 
 	p1.outputPointerAddress();

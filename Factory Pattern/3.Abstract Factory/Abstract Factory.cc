@@ -1,18 +1,18 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
-//³éÏó¹¤³§Ä£Ê½
+//æŠ½è±¡å·¥å‚æ¨¡å¼
 
 
-//³éÏó²úÆ·A
+//æŠ½è±¡äº§å“A
 class AbstractProductA
 {
 public:
-	virtual void Operation() = 0;//´¿Ğéº¯Êı
+	virtual void Operation() = 0;//çº¯è™šå‡½æ•°
 };
 
 
-//¾ßÌå²úÆ·A1
+//å…·ä½“äº§å“A1
 class ConcreteProductA1: public AbstractProductA
 {
 public:
@@ -23,7 +23,7 @@ public:
 };
 
 
-//¾ßÌå²úÆ·A2
+//å…·ä½“äº§å“A2
 class ConcreteProductA2:public AbstractProductA
 {
 public:
@@ -33,15 +33,15 @@ public:
 	}
 };
 
-//³éÏó²úÆ·B
+//æŠ½è±¡äº§å“B
 class AbstractProductB
 {
 public:
-	virtual void Operation() = 0;//´¿Ğéº¯Êı
+	virtual void Operation() = 0;//çº¯è™šå‡½æ•°
 };
 
 
-//¾ßÌå²úÆ·B1
+//å…·ä½“äº§å“B1
 class ConcreteProductB1: public AbstractProductB
 {
 public:
@@ -52,7 +52,7 @@ public:
 };
 
 
-//¾ßÌå²úÆ·B2
+//å…·ä½“äº§å“B2
 class ConcreteProductB2:public AbstractProductB
 {
 public:
@@ -63,7 +63,7 @@ public:
 };
 
 
-//³éÏó¹¤³§
+//æŠ½è±¡å·¥å‚
 class AbstractFactory
 {
 public:
@@ -71,7 +71,7 @@ public:
 	virtual AbstractProductB* CreateProductB() = 0;
 };
 
-//¾ßÌå¹¤³§1
+//å…·ä½“å·¥å‚1
 class ConcreteFactory1: public AbstractFactory
 {
 public:
@@ -86,7 +86,7 @@ public:
 			
 };
 
-//¾ßÌå¹¤³§2
+//å…·ä½“å·¥å‚2
 class ConcreteFactory2: public AbstractFactory
 {
 public:
